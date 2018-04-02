@@ -48,7 +48,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "webpack": "NODE_ENV=development webpack -wd --config=config/webpack.config.dev.js",
-    "express": "nodemon src/server/index.js"
+    "express": "nodemon --exec babel-node src/server/index.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -93,6 +93,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "nodemon": "^1.17.3"
   }
 }

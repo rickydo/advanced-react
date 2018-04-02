@@ -22,3 +22,4 @@ yarn-error.log*
 
 #ignore hot-update.json
 *hot-update.json
+*hot-update.js
