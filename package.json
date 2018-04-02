@@ -46,7 +46,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "webpack": "NODE_ENV=development webpack -wd --config=config/webpack.config.dev.js",
+    "express": "nodemon src/server/index.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -89,5 +91,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
   }
 }
